@@ -37,7 +37,7 @@ def evalute(loader,net,device):
 def train_model(trainloader,valloader,testloader,sentencembed,aspectembed,embeddim,numclasses,device,runs):
 
 	avg_testacc = 0.0
-	numepochs = 3
+	numepochs = 30
 	for run in range(1,runs+1):
 		print("Training for run {} ".format(run))
 		gatedcnn = GatedCNN(sentencembed,aspectembed,embeddim,numclasses).to(device)
