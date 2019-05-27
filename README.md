@@ -8,15 +8,12 @@ This is the code for the paper https://www.aclweb.org/anthology/P18-1234. The mo
 git clone https://github.com/avinashsai/Gated-CNN-for-ABSA
 
 cd PyTorch
-
 ```
 
 ```
 Download glove.840B.300d.zip and unzip and mention the path in main.py
-
 ```
 
 ```
-python main.py 
-
+python main.py --dataset (laptop or restaurant)(default restaurant) --runs (default 5)
 ```
